@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from "@emotion/styled";
 import Pokeball from "../../img/pokeball.png";
-import { useContext } from 'react/cjs/react.development';
-import { PokemonContext } from '../components/PokemonContext';
 
 const Card = styled.div`
 width: 48%;
@@ -34,15 +32,6 @@ font-size:8px;
 `
 
 const MyPokemonCard = ({ pokemon, onRemove }) => {
-
-
-  const {
-    myPokemon,
-    setMyPokemon,
-    capturedPokemons,
-    setCapturedPokemons,
-  } = useContext(PokemonContext);
-
 
   return (
     <>
