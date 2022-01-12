@@ -1,12 +1,10 @@
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import swal from '@sweetalert/with-react';
-import React, { useState } from 'react';
-import { useContext } from 'react/cjs/react.development';
+import React, { useContext, useState } from 'react';
+
 import MyPokemon from './components/myPokemon';
 import { PokemonContext } from './components/PokemonContext';
 import Hero from './layouts/header';
-
-
 
 const client = new ApolloClient({
     uri: "https://graphql-pokeapi.vercel.app/api/graphql",
